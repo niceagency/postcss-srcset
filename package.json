@@ -1,0 +1,28 @@
+{
+  "name": "postcss-srcset",
+  "version": "1.0.0",
+  "description": "Postcss plugin to auto resize images for different media queries",
+  "keywords": [
+    "postcss-plugin"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "paul.kiddle@nice.agency",
+  "license": "MIT",
+  "dependencies": {
+    "balanced-match": "^0.4.2",
+    "image-size": "^0.5.1",
+    "sharp": "^0.17.3"
+  },
+  "devDependencies": {
+    "jest": "^20.0.0",
+    "loader-utils": "^1.1.0",
+    "postcss": "^6.0.1"
+  },
+  "peerDependencies": {
+    "loader-utils": "^1.0",
+    "postcss": "^6.0"
+  }
+}

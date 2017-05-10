@@ -1,0 +1,13 @@
+html {
+  background: url('./images/background.jpg') cover;
+  color: white;
+}@media (max-width: 900px) {html {
+  background: url('./images/background.jpg?size=900') cover;
+}
+}@media (max-width: 600px) {html {
+  background: url('./images/background.jpg?size=600') cover;
+}
+}@media (max-width: 300px) {html {
+  background: url('./images/background.jpg?size=300') cover;
+}
+}
