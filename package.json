@@ -2,6 +2,7 @@
   "name": "postcss-srcset",
   "version": "1.0.0",
   "description": "Postcss plugin to auto resize images for different media queries",
+  "homepage": "https://github.com/niceagency/postcss-srcset",
   "keywords": [
     "postcss-plugin"
   ],
@@ -9,7 +10,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "paul.kiddle@nice.agency",
+  "author": "Paul Kiddle <paul.kiddle@nice.agency>",
   "license": "MIT",
   "dependencies": {
     "balanced-match": "^0.4.2",
