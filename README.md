@@ -132,4 +132,4 @@ resizeImage(image, 400).then(
 This file is inspired by (and partly copied from) the [srcset-loader][1];
 check that out if you want to use `srcset` in img tags.
 
-[1](https://github.com/timse/srcset-loader/)
+[1]: https://github.com/timse/srcset-loader/
