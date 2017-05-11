@@ -8,7 +8,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "webpack --config=demo/webpack.config.js && (xdg-open demo/index.html || open demo/index.html)"
   },
   "author": "Paul Kiddle <paul.kiddle@nice.agency>",
   "license": "MIT",
@@ -20,6 +21,11 @@
     "sharp": "^0.17.3"
   },
   "devDependencies": {
-    "jest": "^20.0.0"
+    "jest": "^20.0.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
   }
 }

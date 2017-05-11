@@ -68,6 +68,12 @@ postcss([
 ])
 ```
 
+### Demo
+
+To run the demo, clone this repo and run `npm i && npm start`.
+
+![Demonstration of the output](demo.gif)
+
 ## Use With Build Tools
 
 This plugin comes with a loader for webpack, but you can use any build tool
