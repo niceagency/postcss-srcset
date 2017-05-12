@@ -1,4 +1,4 @@
-# PostCSS srcset plugin
+# PostCSS srcset plugin [![npm version](https://img.shields.io/npm/v/postcss-srcset.svg?style=flat)](https://www.npmjs.com/package/postcss-srcset)
 
 <img align="right" width="135" height="95"
      title="Philosopher's stone, logo of PostCSS"
@@ -7,7 +7,25 @@
 Assists in auto-generating background images scaled for different viewport
 widths.
 
+Install with npm: `npm install --save-dev postcss-srcset`
+
+## What it does
+
+The postcss-srcset plugin provides a CSS function `srcset` that takes an image
+path and list of viewport widths. For each width, the plugin will create a
+media query that applies to that viewport width (and below) and contains
+a duplicate of the declaration it's used in, with the width appended to the URL
+in a query string.
+
+The plugin doesn't actually scale the images, but the package includes a webpack
+loader that you can use to do the job.
+
+## Examples
+
 ```javascript
+// Code example
+const postcss = require('postcss')
+
 postcss([
   require('postcss-srcset')(/* optional options */)
 ])
@@ -16,7 +34,7 @@ postcss([
 ```css
 /* Input example */
 html {
-  background: srcset('./myimage.png', 300, 500, 1000) cover;
+  background: srcset('./myimage.png', 300 500 1000) cover;
   color: white;
 }
 ```
@@ -46,6 +64,8 @@ html {
   }
 }
 ```
+
+For a more comprehensive example, see the [demo](/demo).
 
 ### Options
 
@@ -86,7 +106,7 @@ An example of using the built-in webpack loader:
 ```javascript
 const srcsetPlugin = require('postcss-srcset')
 
-module.expots = {
+module.exports = {
   module: {
     rules: [
       {
